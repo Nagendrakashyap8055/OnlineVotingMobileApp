@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".two">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:background="#fece2f"
+            android:padding="20dp">
+
+            <ImageView
+                android:id="@+id/camera"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="9dp"
+                android:layout_marginLeft="9dp"
+                android:layout_marginBottom="86dp"
+                android:src="@drawable/camera" />
+
+            <TextView
+                android:id="@+id/fullname_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="102dp"
+                android:layout_toRightOf="@+id/camera"
+                android:fontFamily="sans-serif-black"
+                android:includeFontPadding="false"
+                android:text=" Voters Registration"
+                android:textColor="#000"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/username_field"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/fullname_field"
+                android:layout_marginLeft="33dp"
+                android:layout_marginTop="3dp"
+                android:layout_toRightOf="@+id/camera"
+                android:includeFontPadding="false"
+                android:text=" Voters Registration"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:startIconDrawable="@drawable/ic_person"
+            android:hint="Full Name"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vfullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/registration"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:endIconMode="clear_text"
+            app:startIconDrawable="@drawable/ic_ballot"
+            android:hint="E-Mail">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:hint="Username"
+            app:startIconDrawable="@drawable/ic_keyboard"
+            app:endIconMode="clear_text">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/vusername"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="10dp">
+
+            </com.google.android.material.textfield.TextInputEditText>
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            app:startIconDrawable="@drawable/ic_security"
+            app:endIconMode="password_toggle"
+            android:hint="Password">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vpassword"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:startIconDrawable="@drawable/ic_call"
+            android:layout_marginBottom="0dp"
+            app:endIconMode="clear_text"
+            android:hint="Phone NO.">
+
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/vphone_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+
+            android:padding="10dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="#fece2f"
+            android:fontFamily="sans-serif-black"
+            android:text="Add Voter" />
+    </LinearLayout>
+</ScrollView>
+
+
+
+
+

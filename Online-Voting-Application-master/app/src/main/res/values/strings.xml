@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">election2020</string>
+    <string name="shadab">s</string>
+    <string name="expand_all" />
+    <string name="your_profile">Your Profile</string>
+    <string name="candidate_registration">CANDIDATE REGISTRATION</string>
+    <string name="create_account" />
+    <string name="add_candidate">Add Candidate</string>
+    <string name="voter">Voter Registration</string>
+    <string name="enter_phone_no">Enter Phone no.</string>
+    <string name="enter_id">Enter id</string>
+    <string name="login">LOGIN</string>
+    <string name="login_as_admin">Login As Admin</string>
+    <string name="enter_username">Enter Username</string>
+    <string name="enter_password">Enter Password</string>
+    <string name="submit">SUBMIT</string>
+</resources>

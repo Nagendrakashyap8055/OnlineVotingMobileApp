@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="5dp"
+    app:cardUseCompatPadding="true"
+    app:cardElevation="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:text="demo"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@+id/nametext"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/phone_no"
+            android:text="demo"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/emailtext"
+            android:text="demo"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/age"
+            android:layout_marginLeft="10dp"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/nametext"
+            android:text="demo"
+            android:textStyle="bold"
+            android:textSize="25sp"
+            android:textColor="#000"
+            android:layout_below="@id/phone_no"
+            android:layout_marginLeft="10dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

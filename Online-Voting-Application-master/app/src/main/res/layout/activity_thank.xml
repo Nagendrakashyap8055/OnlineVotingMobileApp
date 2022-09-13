@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E4E4E4"
+    tools:context=".thank">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/textview11"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:layout_marginTop="60dp"
+                android:fontFamily="@font/roboto_slab"
+                android:gravity="center"
+                android:text="Thank you for Voting in this election"
+                android:textSize="30dp" />
+            <Button
+                android:id="@+id/exit"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="Exit"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/textview11"
+                android:onClick="calllogout"
+                android:background="#FFD34A">
+            </Button>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/exit"
+                >
+
+                <ImageView
+                    android:id="@+id/document"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:src="@drawable/document">
+                </ImageView>
+                <ImageView
+                    android:id="@+id/line"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/line"
+                    android:layout_below="@id/document"
+                    android:layout_marginTop="10dp">
+                </ImageView>
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ballot3d"
+                    android:layout_below="@id/line"/>
+
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>
+

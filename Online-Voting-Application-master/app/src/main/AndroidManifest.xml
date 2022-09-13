@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.election2020">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".votecount" />
+        <activity android:name=".mpelection" />
+        <activity android:name=".thank" />
+        <activity android:name=".registervoter" />
+        <activity android:name=".showuserlist" />
+        <activity
+            android:name=".voting"
+            android:parentActivityName=".userdashboard" />
+        <activity android:name=".forgetpassword" />
+        <activity android:name=".login_as_admin" />
+        <activity
+            android:name=".userdashboard"
+            android:parentActivityName=".login" />
+        <activity
+            android:name=".signup"
+            android:parentActivityName=".welcome" />
+        <activity android:name=".declareresult" />
+        <activity
+            android:name=".four"
+            android:parentActivityName=".dashboard" />
+        <activity
+            android:name=".three"
+            android:parentActivityName=".dashboard" />
+        <activity android:name=".two" />
+        <activity
+            android:name=".currentleadership"
+            android:parentActivityName=".dashboard" />
+        <activity
+            android:name=".dashboard"
+            android:parentActivityName=".signup" />
+        <activity
+            android:name=".login"
+            android:parentActivityName=".welcome" />
+        <activity
+            android:name=".welcome"
+            android:parentActivityName=".splash" />
+        <activity android:name=".splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

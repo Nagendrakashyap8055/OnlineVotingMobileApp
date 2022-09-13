@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1087455640550",
+    "firebase_url": "https://election2020-64cf5.firebaseio.com",
+    "project_id": "election2020-64cf5",
+    "storage_bucket": "election2020-64cf5.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1087455640550:android:cc716a511baade945cb427",
+        "android_client_info": {
+          "package_name": "com.example.election2020"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1087455640550-c7ahj0lj0s7pi842m89qo5vno6r5335m.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnAOt1YMAN65JWwnhlXToKh8WdEyJ4Er4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1087455640550-c7ahj0lj0s7pi842m89qo5vno6r5335m.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

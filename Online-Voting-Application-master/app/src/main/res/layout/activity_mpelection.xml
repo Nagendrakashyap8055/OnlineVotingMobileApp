@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:verticalScrollbarPosition="right"
+    android:visibility="visible"
+    tools:context=".voting">
+
+    <LinearLayout
+        android:id="@+id/lineralayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+        <RelativeLayout
+            android:id="@+id/relativelayout"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="#FFD34A"
+            >
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="100dp"
+                android:gravity="center"
+                android:text="Cast your vote"
+                android:textSize="30sp"
+                app:fontFamily="sans-serif-black" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView"
+                android:layout_marginTop="0dp"
+                android:gravity="center"
+                android:text="Vote by clicking on the candidate"
+                android:textSize="13sp"
+                app:fontFamily="sans-serif-black" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView2"
+                android:text=". . ."
+                android:gravity="center"
+                android:textSize="30sp"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativelayout1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:id="@+id/textinputlayout"
+                android:layout_height="wrap_content"
+                app:endIconMode="clear_text"
+                android:drawableLeft="@drawable/ic_person">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/enteruid"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:drawableLeft="@drawable/ic_person"
+                    android:focusableInTouchMode="true"
+                    android:fontFamily="sans-serif-black"
+                    android:hint="  Enter UID"
+                    android:inputType="text"
+                    android:textColor="@color/black" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <RadioGroup
+                android:id="@+id/radiogroup"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textinputlayout"
+                android:layout_marginTop="20dp">
+
+
+                <RadioButton
+                    android:id="@+id/radio1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:text="Ranjan Gogai"
+                    android:textSize="40sp">
+
+
+                </RadioButton>
+
+                <RadioButton
+                    android:id="@+id/radio2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="right"
+                    android:text="Nitish Mishra"
+                    android:textSize="40sp">
+
+                </RadioButton>
+
+
+                <RadioButton
+                    android:id="@+id/radio3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="25dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Raghav Chadha"
+
+                    android:textSize="40sp">
+
+                </RadioButton>
+
+            </RadioGroup>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/submit"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_below="@id/radiogroup"
+            android:background="#FFD34A"
+            android:layout_marginTop="200dp"
+            android:text="@string/submit">
+
+        </Button>
+
+    </LinearLayout>
+</ScrollView>
